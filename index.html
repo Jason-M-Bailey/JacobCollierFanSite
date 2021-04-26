@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="Assets/stylesheet.css">
     <title>Jacob Collier Fan Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
 <body>
@@ -11,11 +12,15 @@
     <img src="https://media.giphy.com/media/l1BgQKolxTUy2wxgY/giphy.gif" alt="Jacob Collier">
   </div>
   <ul class="navbar">
+    <!-- what html semantics should I use here? -->
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
     <li><a href="#home">Home</a></li>
     <li><a href="https://www.youtube.com/channel/UCtmY49Zn4l0RMJnTWfV7Wsg" target="_blank">YouTube</a></li>
     <li><a href="https://open.spotify.com/artist/0QWrMNukfcVOmgEU0FEDyD" target="_blank">Spotify</a></li>
     <li style="float:right"><a class="active" href="mailto:example@mail.com">Contact</a></li>
   </ul>
+ 
 
   <section class="bio">
     <h3>Bio</h3>
@@ -66,7 +71,7 @@
       <tr>
         <td>2020</td>
         <td>Best Arrangement, Instrument or A Cappella</td>
-        <td><a href="https://www.youtube.com/watch?v=VPLCk-FTVvw&ab_channel=JacobCollierVEVO">"Moon River</a></td>
+        <td><a href="https://www.youtube.com/watch?v=VPLCk-FTVvw&ab_channel=JacobCollierVEVO">"Moon River"</a></td>
         <td>Won</td>
       </tr>
       <tr>
@@ -84,22 +89,40 @@
       <tr>
         <td>2021</td>
         <td>Best Arrangement, Instrument and Vocals</td>
-        <td><a href="https://www.youtube.com/watch?v=OnA5po3ASyI&ab_channel=JacobCollierVEVO">"He Won't Hold You</a></td>
+        <td><a href="https://www.youtube.com/watch?v=OnA5po3ASyI&ab_channel=JacobCollierVEVO">"He Won't Hold You"</a></td>
         <td>Won</td>
       </tr>
     </table>  
   </section>
 
   <section class="video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/heCOx4TDo0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- why is this h3 not displaying with the video -->
+    <h3>Check out Jacob's newest release</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vPBirt1YhuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </section>
 
+  <!-- Can I size all the images on the CSS page? Or do I need to size them each individually? -->
   <figure class="socials">
     <a href="https://www.youtube.com/channel/UCtmY49Zn4l0RMJnTWfV7Wsg" target="_blank"><img src="Assets/Images/youtubepgn.png" alt="Jacob Collier on YouTube" height="50px" width="50px"></a>
     <a href="https://www.tiktok.com/@jacobcollier?lang=en" target="_blank"><img src="Assets/Images/tiktok icon.png" alt="Jacob Collier on TikTok" height="50px" width="50px"></a>
     <a href="https://twitter.com/jacobcollier?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="Assets/Images/twitterpng.png" alt="Jacob Collier on Twitter" height="50px" width="50px"></a>
     <a href="https://www.instagram.com/jacobcollier/?hl=en" target="_blank"><img src="Assets/Images/instagram icon.png" alt="Jacob Collier on Instagram" height="50px" width="50px"></a>
+    <a href="https://open.spotify.com/artist/0QWrMNukfcVOmgEU0FEDyD" target="_blank"><img src="Assets/Images/spotifypng.png" alt="Jacob Collier on Spotify" height="50px" width="50px"></a>
   </figure>
 
+  <script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
+
 </body>
+
+<footer>Adding a footer just because</footer>
 </html>
