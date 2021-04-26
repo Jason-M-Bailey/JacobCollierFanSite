@@ -1,10 +1,14 @@
 body {
-  background: black;
+  background: linear-gradient(to bottom, #000, rgb(233, 5, 195));
   color: azure;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1, h3 {
+  text-align: center;
+}
+
+h5 {
   text-align: center;
 }
 
@@ -22,11 +26,9 @@ a {
   top: 0;
 }
 
-
 .navbar li {
   float: left;
 }
-
 .navbar li a {
   display: block;
   color: white;
@@ -40,7 +42,7 @@ a {
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: rgb(233, 5, 195);
 }
 
 .bio {
@@ -63,7 +65,7 @@ a {
 }
 
 td, th {
-  border: 1px inset #333;
+  border: 1px inset rgb(233, 5, 195);
   padding: 7px;
 }
 
@@ -98,7 +100,7 @@ footer {
 
 .progress-bar {
   height: 8px;
-  background: #4caf50;
+  background: rgb(233, 5, 195);
   width: 0%;
 }
 
@@ -124,4 +126,8 @@ a:hover {
 
 #myBtn:hover {
   background-color: rgb(109, 108, 108);
+}
+
+iframe {
+  text-align: center;
 }

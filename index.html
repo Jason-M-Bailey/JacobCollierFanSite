@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="Assets/stylesheet.css">
     <title>Jacob Collier Fan Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="Assets/Images/jacobcollier.jpg">
   </head>
 
 <body>
@@ -15,7 +16,7 @@
     <!-- what html semantics should I use here? -->
     <div class="progress-container">
       <div class="progress-bar" id="myBar"></div>
-    <li><a href="#home">Home</a></li>
+    <li><a href="#">Home</a></li>
     <li><a href="https://www.youtube.com/channel/UCtmY49Zn4l0RMJnTWfV7Wsg" target="_blank">YouTube</a></li>
     <li><a href="https://open.spotify.com/artist/0QWrMNukfcVOmgEU0FEDyD" target="_blank">Spotify</a></li>
     <li style="float:right"><a class="active" href="mailto:example@mail.com">Contact</a></li>
@@ -97,11 +98,12 @@
 
   <section class="video">
     <!-- why is this h3 not displaying with the video -->
-    <h3>Check out Jacob's newest release</h3>
+    <h4>Why is this text not over the video? Check out Jacob's newest release</h4>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/vPBirt1YhuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </section>
 
   <!-- Can I size all the images on the CSS page? Or do I need to size them each individually? -->
+  <h5>Follow Jacob's Socials</h5>
   <figure class="socials">
     <a href="https://www.youtube.com/channel/UCtmY49Zn4l0RMJnTWfV7Wsg" target="_blank"><img src="Assets/Images/youtubepgn.png" alt="Jacob Collier on YouTube" height="50px" width="50px"></a>
     <a href="https://www.tiktok.com/@jacobcollier?lang=en" target="_blank"><img src="Assets/Images/tiktok icon.png" alt="Jacob Collier on TikTok" height="50px" width="50px"></a>
@@ -112,6 +114,9 @@
 
   <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
 
+  <figure>
+    <iframe src="https://open.spotify.com/embed/artist/0QWrMNukfcVOmgEU0FEDyD" width="300" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </figure>
   
   <script>
     // When the user scrolls the page, execute myFunction 
@@ -123,27 +128,27 @@
       var scrolled = (winScroll / height) * 100;
       document.getElementById("myBar").style.width = scrolled + "%";
     }
-
+/*
     var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+    }
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-    </script>
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+*/
+  </script>
 
 </body>
 
