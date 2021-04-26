@@ -53,37 +53,37 @@
       <tr>
         <td>2017</td>
         <td>Best Arrangement, Instrument and Vocals</td>
-        <td><a href="https://www.youtube.com/watch?v=zua831utwMM&ab_channel=JacobCollier">"Flintstones"</a></td>
+        <td><a href="https://www.youtube.com/watch?v=zua831utwMM&ab_channel=JacobCollier" target="_blank">"Flintstones"</a></td>
         <td>Won</td>
       </tr>
       <tr>
         <td>2017</td>
         <td>Best Arrangement, Instrument or A Cappella</td>
-        <td><a href="https://www.youtube.com/watch?v=muwxq701Lj4&ab_channel=JacobCollier">"You and I"</a></td>
+        <td><a href="https://www.youtube.com/watch?v=muwxq701Lj4&ab_channel=JacobCollier" target="_blank">"You and I"</a></td>
         <td>Won</td>
       </tr>
       <tr>
         <td>2020</td>
         <td>Best Arrangement, Instrument and Vocals</td>
-        <td><a href="https://www.youtube.com/watch?v=nspqYGz-Z1s&ab_channel=JacobCollier">"All Night Long"</a></td>
+        <td><a href="https://www.youtube.com/watch?v=nspqYGz-Z1s&ab_channel=JacobCollier" target="_blank">"All Night Long"</a></td>
         <td>Won</td>
       </tr>
       <tr>
         <td>2020</td>
         <td>Best Arrangement, Instrument or A Cappella</td>
-        <td><a href="https://www.youtube.com/watch?v=VPLCk-FTVvw&ab_channel=JacobCollierVEVO">"Moon River"</a></td>
+        <td><a href="https://www.youtube.com/watch?v=VPLCk-FTVvw&ab_channel=JacobCollierVEVO" target="_blank">"Moon River"</a></td>
         <td>Won</td>
       </tr>
       <tr>
         <td>2021</td>
         <td>Album of the Year</td>
-        <td><a href="https://www.youtube.com/watch?v=oOCbkL63CKU&list=PLHX_dBxnc8z_RR3ITpYS5AB5TQkGM67BP&ab_channel=JacobCollier">Djesse Vol. 3</a></td>
+        <td><a href="https://www.youtube.com/watch?v=oOCbkL63CKU&list=PLHX_dBxnc8z_RR3ITpYS5AB5TQkGM67BP&ab_channel=JacobCollier" target="_blank">Djesse Vol. 3</a></td>
         <td>Nominated</td>
       </tr>
       <tr>
         <td>2021</td>
         <td>Best R&B Performance</td>
-        <td><a href="https://www.youtube.com/watch?v=MJpiozQUJvE&ab_channel=JacobCollier">"All I Need" featuring Ty Dolla Sign & Mahalia</a></td>
+        <td><a href="https://www.youtube.com/watch?v=MJpiozQUJvE&ab_channel=JacobCollier" target="_blank">"All I Need" featuring Ty Dolla Sign & Mahalia</a></td>
         <td>Nominated</td>
       </tr>
       <tr>
@@ -110,6 +110,9 @@
     <a href="https://open.spotify.com/artist/0QWrMNukfcVOmgEU0FEDyD" target="_blank"><img src="Assets/Images/spotifypng.png" alt="Jacob Collier on Spotify" height="50px" width="50px"></a>
   </figure>
 
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+  
   <script>
     // When the user scrolls the page, execute myFunction 
     window.onscroll = function() {myFunction()};
@@ -120,6 +123,26 @@
       var scrolled = (winScroll / height) * 100;
       document.getElementById("myBar").style.width = scrolled + "%";
     }
+
+    var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
     </script>
 
 </body>
