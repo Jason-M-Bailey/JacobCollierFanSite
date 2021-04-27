@@ -4,16 +4,20 @@ body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1, h3 {
+h1, h3, h5 {
   text-align: center;
 }
 
-h5 {
+h4 {
   text-align: center;
 }
 
 a {
   color: azure;
+}
+
+a:hover {
+  color: orange;
 }
 
 .navbar {
@@ -63,9 +67,10 @@ a {
   padding: 0% 5%;
 }
 
+/* why does this not center the entire table?*/
 .awards {
   float: left;
-  padding: 40px;
+  padding: 10px;
 }
 
 td, th {
@@ -80,6 +85,11 @@ td, th {
 .video {
   text-align: center;
   padding: 50px;
+}
+
+.vidfont {
+  text-align: center;
+  float: center;
 }
 
 figure {
@@ -108,16 +118,12 @@ footer {
   width: 0%;
 }
 
-a:hover {
-  color: orange;
-}
-
 #myBtn {
   display: none;
   position: fixed;
   bottom: 25%;
   right: 1%;
-  z-index: 99;
+  z-index: 9999;
   font-size: 12px;
   border: none;
   outline: none;
