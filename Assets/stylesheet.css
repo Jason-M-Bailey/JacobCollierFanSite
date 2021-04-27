@@ -45,6 +45,10 @@ a {
   background-color: rgb(233, 5, 195);
 }
 
+.home {
+  background-color: #222;
+}
+
 .bio {
   float: left;
   text-align: justify;

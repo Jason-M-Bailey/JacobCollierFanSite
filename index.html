@@ -16,7 +16,7 @@
     <!-- what html semantics should I use here? -->
     <div class="progress-container">
       <div class="progress-bar" id="myBar"></div>
-    <li><a href="#">Home</a></li>
+    <li><a class="home" href="#">Home</a></li>
     <li><a href="https://www.youtube.com/channel/UCtmY49Zn4l0RMJnTWfV7Wsg" target="_blank">YouTube</a></li>
     <li><a href="https://open.spotify.com/artist/0QWrMNukfcVOmgEU0FEDyD" target="_blank">Spotify</a></li>
     <li style="float:right"><a class="active" href="mailto:example@mail.com">Contact</a></li>
@@ -139,17 +139,18 @@
       mybutton.style.display = "block";
     } else {
       mybutton.style.display = "none";
-    }
-    }
-
+    }}
 // When the user clicks on the button, scroll to the top of the document
   function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
-*/
-  </script>
 
+  function topFunction () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  */
+  </script>
 </body>
 
 <footer>Adding a footer just because</footer>
